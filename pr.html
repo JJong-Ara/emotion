@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매개변수, 파라미터,이자값</title>
+</head>
+<body>
+    <script>
+        $ (function(){
+            // 함수 내부에 저장할 수 있는 이름없는 변수
+            // as - 함수정의
+            // as 함수에는 3개의 매개변수(a,b,c)를 받음
+            function as(a,b,c){
+                return a+b+c;
+                // 함수가 받은 매개변수를 더한 값 반환
+                // 매개변수는 함수의 입력값을 받아서 그 함수의 동작을 제어함
+            }
+            // 해당 함수 호출시 함수 as를 호출하면서 3개의 값을 전달
+            // 결과 호출시,
+            var sum = as(500,400,100);
+            // 결과 : 1000
+            console.log(sum);
+
+
+
+        });
+    </script>
+</body>
+</html>
